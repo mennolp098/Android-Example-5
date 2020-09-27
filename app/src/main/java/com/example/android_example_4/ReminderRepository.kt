@@ -22,11 +22,11 @@ class ReminderRepository(context: Context) {
 
 
     suspend fun deleteReminder(reminder: Reminder) {
-        reminderDao.deleteReminder(reminder)
+        reminderDao?.deleteReminder(reminder)
     }
 
     suspend fun updateReminder(reminder: Reminder) {
-        reminderDao.updateReminder(reminder)
+        reminderDao?.updateReminder(reminder)
     }
 
 }
